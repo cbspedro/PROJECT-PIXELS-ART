@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pixel Arte CbS</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1 id="title">Paleta de Cores</h1>
+        </div>
+    </section>
+    <section>
+        <div id="color-palette">
+            <div class="color" id="black" style="background-color: black;" onclick="changeColor('black')"></div>
+            <div class="color" id="yellow" style="background-color: yellow;"onclick="changeColor('yellow')"></div>
+            <div class="color" id="blue" style="background-color: blue;"onclick="changeColor('blue')"></div>
+            <div class="color" id="green" style="background-color: green;"onclick="changeColor('green')"></div>
+        </div>
+    </section>
+    <section>
+        <div id="pixel-board"></div>
+    </section>
+    <div id="button">
+        <button id="clear-button" onclick="limpar()">Limpar</button>
+    </div>
+    <form name="form">
+        <input type="number" name="input">
+        <input type="button" onclick="geraQuadro(form.input.value)" value="Tamanho">
+    </form>
+<script src="script.js"></script>  
+</body>
+</html>
